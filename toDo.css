@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+/* General styles */
+body {
+    
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url( /Users/user/Downloads/photo-1552820755-733e038f86d5.jpeg );
+    background-position: center; /* Centers the image horizontally and vertically */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-size: cover; /* Ensures the image covers the entire container */
+    height: 100vh; /* Makes sure the body takes up the full viewport height */
+    margin: 0; /* Removes default body margin */
+}
+  
+  /* Container for the to-do list */
+  .container {
+    font-family: "Julius Sans One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #fff;
+    background-image: url(/Users/user/Downloads/marble-background.jpeg);
+    background-position: center; /* Centers the image horizontally and vertically */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-size: cover; /* Ensures the image covers the entire container */
+    height: 100vh; /* Makes sure the body takes up the full viewport height */
+    margin: 0; /* Removes default body margin */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    
+  }
+  
+  /* Heading style */
+  h1 {
+    font-family: "Julius Sans One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color:whitesmoke;
+  }
+  
+  /* Input field style */
+  input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Button styles */
+  button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  /* Clear All button style */
+  #clearAllBtn {
+    background-color: #dc3545;
+    margin-top: 10px;
+  }
+  
+  #clearAllBtn:hover {
+    background-color: #c82333;
+  }
+  
+  /* Task list style */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* Individual task style */
+  li {
+    background-color: #f8f9fa;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease; /* Smooth transition for animations */
+  }
+  
+  /* Delete button style */
+  li button {
+    background-color: #dc3545;
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  li button:hover {
+    background-color: #c82333;
+  }
+  
+  /* Completed task style */
+  .completed {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  /* Fade-out animation for deleted tasks */
+  li.fade-out {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  
+  /* Task counter style */
+  #taskCounter {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 600px) {
+    .container {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 20px;
+    }
+  
+    input[type="text"] {
+      width: calc(100% - 20px);
+    }
+  
+    button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
